@@ -1,5 +1,14 @@
-/* this may need to be taken out */
-/* main {
-    background-color: rgb(64, 77, 87);
-    height: 93vh;
+/* Hello! styles for the page in general! */
+
+/* .container {
+    border: solid red 1px;
+}
+
+.grid {
+    border: solid red 1px;
 } */
+
+.content_img {
+    width: 100%;
+    height: 5rem;
+}
