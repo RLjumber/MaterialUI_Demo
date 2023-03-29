@@ -1,5 +1,6 @@
 import { Paper, Grid, Typography, Box, Rating, createTheme, ThemeProvider } from "@mui/material";
 import { TripOrigin } from "@mui/icons-material";
+import "../App.css";
 
 const theme = createTheme({
     components: {
@@ -34,7 +35,7 @@ const ContentCard = ({tour}) => {
     return (
         <Grid item xs={3}>
             <ThemeProvider theme={theme}>
-            <Paper elevation={4}>
+            <Paper elevation={4} className="tour-card">
                 <img src={tour.image}
                     alt="something here"
                     className="content_img"

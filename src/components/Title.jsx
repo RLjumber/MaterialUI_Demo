@@ -4,7 +4,7 @@ const Title = () => {
     return (
         <div>
             <Container className="container" maxWidth="sm" style={{ marginTop: '50px' }}>
-                <Typography variant="h2" align="center" color="textPrimary" gutterBottom>R. Luke Jumber</Typography>
+                <Typography variant="h3" component="h1" align="center" color="textPrimary" gutterBottom>R. Luke Jumber</Typography>
             </Container>
         </div>
     )
