@@ -1,9 +1,10 @@
 import React from "react";
 import "./App.css";
-import { CssBaseline, Container, Grid } from "@mui/material";
+import { CssBaseline, Container, Grid, Typography } from "@mui/material";
 import Header from "./components/Header";
 import Title from "./components/Title";
 import ContentCard from "./components/ContentCard";
+import cities from "./components/data.json";
 
 
 const App = () => {
@@ -20,12 +21,27 @@ const App = () => {
       <main className="main">
           <Title />
           <Container>
-            <Grid className="grid" container spacing={2}>
+            {cities.map((city) => (
+              <>
+                <Typography 
+                variant="h4"
+                component="h2"
+                mt={5}
+                mb={5}
+                >
+                  Top {city.name} Tours
+                </Typography>
+                <Grid className="grid" container spacing={2}>
+                  {city.tours.map((tour, index) => <ContentCard tour={tour} key={index}/>)}
+                </Grid>
+              </>
+            ))}
+            {/* <Grid className="grid" container spacing={2}>
               <ContentCard />
               <ContentCard />
               <ContentCard />
               <ContentCard />
-            </Grid>
+            </Grid> */}
           </Container>
       </main>
 

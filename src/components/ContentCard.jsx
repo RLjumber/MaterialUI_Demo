@@ -1,17 +1,47 @@
-import { Paper, Grid, Typography, Box, Rating } from "@mui/material";
+import { Paper, Grid, Typography, Box, Rating, createTheme, ThemeProvider } from "@mui/material";
 import { TripOrigin } from "@mui/icons-material";
 
-const ContentCard = () => {
+const theme = createTheme({
+    components: {
+        MuiTypography: {
+            variants: [
+                {
+                    props: {
+                        variant: "body2"
+                    },
+                    style: {
+                        fontSize: 11,
+                    }
+                },
+                {
+                    props: {
+                        variant: "body3"
+                    },
+                    style: {
+                        fontSize: 9,
+                        
+                    }
+                }
+            ]
+        }
+    }
+})
+
+const ContentCard = ({tour}) => {
+
+    console.log(tour.image)
+
     return (
         <Grid item xs={3}>
+            <ThemeProvider theme={theme}>
             <Paper elevation={4}>
-                <img src="https://picsum.photos/276/80"
+                <img src={tour.image}
                     alt="something here"
                     className="content_img"
                 />
                 <Box paddingX={1}>
                     <Typography variant="subtitle1" component="h2" mb={1} fontSize={20}>
-                        This thing
+                        {tour.name}
                     </Typography>
                     <Box
                     sx={{
@@ -22,10 +52,10 @@ const ContentCard = () => {
                     >
                     <TripOrigin fontSize="small"/>
                     <Typography
-                        variant="body2" 
+                        variant="body1" 
                         component="p"
                         ml={1}
-                    >Book Cellar</Typography>
+                    >{tour.duration} hours</Typography>
                     </Box>
                     <Box
                         sx={{
@@ -33,15 +63,16 @@ const ContentCard = () => {
                             marginTop: "3vh"
                         }}
                     >
-                        <Rating name="read-only" value={4.5} precision={.25} readOnly size="small"/>
-                        <Typography variant="body2" fontSize={14} ml={1}>4.5</Typography>
-                        <Typography variant="body2" fontSize={14} ml={1}>(256 reviews)</Typography>
+                        <Rating name="read-only" value={tour.rating} precision={.25} readOnly size="small"/>
+                        <Typography variant="body2" ml={1}>4.5</Typography>
+                        <Typography variant="body2" ml={1}>({tour.numberOfReviews} reviews)</Typography>
                     </Box>
                     <Box>
-                    <Typography variant="h6" component="h3" mt={0}>Price: $399</Typography>
+                    <Typography variant="h6" component="h3" mt={0}>Price: ${tour.price}</Typography>
                     </Box>
                 </Box>
             </Paper>
+            </ThemeProvider>
         </Grid>
     )
 };
