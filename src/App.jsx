@@ -13,11 +13,11 @@ const App = () => {
 
       <CssBaseline enableColorScheme />
 
-      <header>
+      <header className="header">
         <Header />
       </header>
 
-      <main>
+      <main className="main">
           <Title />
           <Container>
             <Grid className="grid" container spacing={2}>
