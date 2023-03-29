@@ -36,12 +36,6 @@ const App = () => {
                 </Grid>
               </>
             ))}
-            {/* <Grid className="grid" container spacing={2}>
-              <ContentCard />
-              <ContentCard />
-              <ContentCard />
-              <ContentCard />
-            </Grid> */}
           </Container>
       </main>
 
