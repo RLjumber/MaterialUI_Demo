@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import cities from "../components/data.json";
 import ImageCollage from "../components/ImageCollage";
+import ControlledAccordions from "../components/Accordion";
+import SimpleBottomNavigation from "../components/BottomNav";
 
 const Tour = () => {
 
@@ -43,9 +45,20 @@ useEffect(() => {
         {tour.name}
       </Typography>
       <Box mt={3} sx={{ display: "flex"}}>
-        <img src={tour.image} alt="" height={325}/>
+        <img src={tour.image} alt="" height={325} width={500}/>
+        <ImageCollage />
       </Box>
-      <ImageCollage />
+      <Box>
+        <Typography variant="h6" component="h6">About this tour</Typography>
+        <Typography variant="paragraph" component="p" mt={2}>
+            {tour.description}
+        </Typography>
+      </Box>
+      <Box mb={10} mt={2}>
+        <Typography variant="h6" component="h6" mt={2}>Frequently asked questions</Typography>
+        <ControlledAccordions />
+      </Box>
+      <SimpleBottomNavigation />
     </Container>
   );
 };

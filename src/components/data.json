@@ -10,7 +10,8 @@
           "rating": 4.5,
           "numberOfReviews": 462,
           "price": 465,
-          "image": "https://tcproduction.blob.core.windows.net/media/%7B240f8b72-1159-4fd3-a150-0a837f50ba4a%7D.2573758641_297d6d19fa_o.jpg"
+          "image": "https://tcproduction.blob.core.windows.net/media/%7B240f8b72-1159-4fd3-a150-0a837f50ba4a%7D.2573758641_297d6d19fa_o.jpg",
+          "description": "Experience the beauty and power of Niagara Falls up close and personal on this immersive tour. Get soaked as you stand right beside the thundering water, feeling its mist and spray on your face. Marvel at the natural wonder of the falls as you learn about their history and geology from your knowledgeable guide."
         },
         {
           "id": 2,
@@ -19,7 +20,8 @@
           "rating": 3.5,
           "numberOfReviews": 641,
           "price": 385,
-          "image": "https://d2ru2mvuh5wx24.cloudfront.net/avtivity_bootstrap/1241/flight_of_angels_3__1920x864.jpg"
+          "image": "https://d2ru2mvuh5wx24.cloudfront.net/avtivity_bootstrap/1241/flight_of_angels_3__1920x864.jpg",
+          "description": "Take to the skies on this thrilling helicopter tour over Niagara Falls. Enjoy a bird's-eye view of the majestic waterfall as you soar above it, feeling the rush of the wind in your hair. See the falls from a new perspective as your pilot shares interesting facts and stories about the area."
         },
         {
           "id": 3,
@@ -28,7 +30,8 @@
           "rating": 4.5,
           "numberOfReviews": 133,
           "price": 144,
-          "image": "https://www.niagarafallsstatepark.com/~/media/parks/niagara-falls/attractions-and-tours/illumination/niagarafalls-illumination-header-desktop.jpg?h=500&w=1500&la=en&hash=123E6D5F1744FBCC74EC36570E77872608D24891g"
+          "image": "https://www.niagarafallsstatepark.com/~/media/parks/niagara-falls/attractions-and-tours/illumination/niagarafalls-illumination-header-desktop.jpg?h=500&w=1500&la=en&hash=123E6D5F1744FBCC74EC36570E77872608D24891g",
+          "description": "Experience the magic of Niagara Falls at night on this enchanting tour. See the falls illuminated by colorful lights and watch as the water sparkles and shimmers in the darkness. Take in the beauty of the falls as you stroll along the Niagara River and listen to the sounds of the water."
         },
         {
           "id": 4,
@@ -37,7 +40,8 @@
           "rating": 4.5,
           "numberOfReviews": 462,
           "price": 465,
-          "image": "https://tcproduction.blob.core.windows.net/media/%7B240f8b72-1159-4fd3-a150-0a837f50ba4a%7D.2573758641_297d6d19fa_o.jpg"
+          "image": "https://tcproduction.blob.core.windows.net/media/%7B240f8b72-1159-4fd3-a150-0a837f50ba4a%7D.2573758641_297d6d19fa_o.jpg",
+          "description": "Take a refreshing dip in the natural pools near the Falls and enjoy the stunning views of the surrounding scenery. The experience is perfect for those who love nature and enjoy swimming in crystal clear waters."
         }
       ]
     },
@@ -52,7 +56,8 @@
           "rating": 4.5,
           "numberOfReviews": 462,
           "price": 465,
-          "image": "https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/lasvegas/strip_b86ddbea-3add-4995-b449-ac85d700b027.jpg"
+          "image": "https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/lasvegas/strip_b86ddbea-3add-4995-b449-ac85d700b027.jpg",
+          "description": "Experience the world's famous landmarks in one place! This activity takes you on a journey to explore the replicas of the Eiffel Tower, the Statue of Liberty, the Pyramids of Giza, and many more iconic landmarks from around the world, all located in Las Vegas."
         },
         {
           "id": 6,
@@ -61,26 +66,29 @@
           "rating": 4.5,
           "numberOfReviews": 462,
           "price": 465,
-          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS61S7BgMkDRlw4dbnDndbbjy2Z2W5Ch_5b5Q&usqp=CAU"
-        },
-        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS61S7BgMkDRlw4dbnDndbbjy2Z2W5Ch_5b5Q&usqp=CAU",
+          "description": "Take a tour of the most famous casinos on the Las Vegas Strip and witness the grandeur of their architecture, extravagant interiors, and lavish facilities. This activity is perfect for those who want to experience the luxurious side of Las Vegas."
+          },
+          {
           "id": 7,
           "name": "Show me the Magic",
           "duration": 8,
           "rating": 3.5,
           "numberOfReviews": 641,
           "price": 385,
-          "image": "https://footwearnews.com/wp-content/uploads/2020/10/magic-trade-show-las-vegas.jpg"
-        },
-        {
+          "image": "https://footwearnews.com/wp-content/uploads/2020/10/magic-trade-show-las-vegas.jpg",
+          "description": "Step into the magical world of illusions and wonder with this activity. Witness incredible acts of levitation, disappearances, and mind-bending tricks that will leave you mesmerized. This activity is perfect for those who love magic and are seeking a unique entertainment experience in Las Vegas."
+          },
+          {
           "id": 8,
           "name": "The Falls at Night",
           "duration": 2,
           "rating": 4.5,
           "numberOfReviews": 133,
           "price": 144,
-          "image": "https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/lasvegas/strip_b86ddbea-3add-4995-b449-ac85d700b027.jpg"
-        }
+          "image": "https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/lasvegas/strip_b86ddbea-3add-4995-b449-ac85d700b027.jpg",
+          "description": "Experience the beauty and serenity of the Falls at night with this activity. The Falls are illuminated with vibrant colors after sunset, creating a mesmerizing view that you won't forget. This tour includes a guided walk along the Falls, highlighting their unique features, as well as time to relax and take in the surroundings. You'll have the opportunity to capture stunning photos of the illuminated Falls, making for a memorable keepsake. The tour lasts for two hours, and is suitable for all ages."
+          }
       ]
     }
   ]
