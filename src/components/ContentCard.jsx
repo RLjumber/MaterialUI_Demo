@@ -1,4 +1,4 @@
-import { Paper, Grid, Typography, Box, Rating, createTheme, ThemeProvider } from "@mui/material";
+import { Paper, Typography, Box, Rating, createTheme, ThemeProvider } from "@mui/material";
 import { TripOrigin } from "@mui/icons-material";
 import "../App.css";
 
@@ -29,52 +29,49 @@ const theme = createTheme({
 })
 
 const ContentCard = ({tour}) => {
-
-    console.log(tour.image)
-
     return (
-        <Grid item xs={3}>
             <ThemeProvider theme={theme}>
-            <Paper elevation={4} className="tour-card">
-                <img src={tour.image}
-                    alt="something here"
-                    className="content_img"
-                />
-                <Box paddingX={1}>
-                    <Typography variant="subtitle1" component="h2" mb={1} fontSize={20}>
-                        {tour.name}
-                    </Typography>
-                    <Box
-                    sx={{
-                        display: "flex",
-                        alignItems: "center",
-                        paddingBottom: "5px"
-                    }}
-                    >
-                    <TripOrigin fontSize="small"/>
-                    <Typography
-                        variant="body1" 
-                        component="p"
-                        ml={1}
-                    >{tour.duration} hours</Typography>
-                    </Box>
-                    <Box
+            <div className="tour-card-container">
+                <Paper elevation={4} className="tour-card">
+                    <img src={tour.image}
+                        alt="something here"
+                        className="content_img"
+                    />
+                    <Box paddingX={1}>
+                        <Typography variant="subtitle1" component="h2" mb={1} fontSize={20}>
+                            {tour.name}
+                        </Typography>
+                        <Box
                         sx={{
                             display: "flex",
-                            marginTop: "3vh"
+                            alignItems: "center",
+                            paddingBottom: "5px"
                         }}
-                    >
-                        <Rating name="read-only" value={tour.rating} precision={.25} readOnly size="small"/>
-                        <Typography variant="body2" ml={1}>4.5</Typography>
-                        <Typography variant="body2" ml={1}>({tour.numberOfReviews} reviews)</Typography>
+                        >
+                        <TripOrigin fontSize="small"/>
+                        <Typography
+                            variant="body1" 
+                            component="p"
+                            ml={1}
+                        >{tour.duration} hours</Typography>
+                        </Box>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                marginTop: "3vh"
+                            }}
+                        >
+                            <Rating name="read-only" value={tour.rating} precision={.25} readOnly size="small"/>
+                            <Typography variant="body2" ml={1}>4.5</Typography>
+                            <Typography variant="body2" ml={1}>({tour.numberOfReviews} reviews)</Typography>
+                        </Box>
+                        <Box>
+                        <Typography variant="h6" component="h3" mt={0}>Price: ${tour.price}</Typography>
+                        </Box>
                     </Box>
-                    <Box>
-                    <Typography variant="h6" component="h3" mt={0}>Price: ${tour.price}</Typography>
-                    </Box>
-                </Box>
-            </Paper>
+                </Paper>
+            </div>
             </ThemeProvider>
-        </Grid>
     )
 };
 

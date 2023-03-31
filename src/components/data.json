@@ -32,7 +32,7 @@
         },
         {
           "id": 4,
-          "name": "Immerse into the Falls",
+          "name": "Swim Near the Falls",
           "duration": 5,
           "rating": 4.5,
           "numberOfReviews": 462,
@@ -46,7 +46,7 @@
       "name": "Las Vegas",
       "tours": [
         {
-          "id": 4,
+          "id": 5,
           "name": "All Around the World",
           "duration": 5,
           "rating": 4.5,
@@ -55,7 +55,7 @@
           "image": "https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/lasvegas/strip_b86ddbea-3add-4995-b449-ac85d700b027.jpg"
         },
         {
-          "id": 5,
+          "id": 6,
           "name": "View the Casinos",
           "duration": 5,
           "rating": 4.5,
@@ -64,7 +64,7 @@
           "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS61S7BgMkDRlw4dbnDndbbjy2Z2W5Ch_5b5Q&usqp=CAU"
         },
         {
-          "id": 6,
+          "id": 7,
           "name": "Show me the Magic",
           "duration": 8,
           "rating": 3.5,
@@ -73,7 +73,7 @@
           "image": "https://footwearnews.com/wp-content/uploads/2020/10/magic-trade-show-las-vegas.jpg"
         },
         {
-          "id": 7,
+          "id": 8,
           "name": "The Falls at Night",
           "duration": 2,
           "rating": 4.5,
