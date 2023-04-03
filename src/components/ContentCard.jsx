@@ -61,8 +61,8 @@ const ContentCard = ({tour}) => {
                                 marginTop: "3vh"
                             }}
                         >
-                            <Rating name="read-only" value={tour.rating} precision={.25} readOnly size="small"/>
-                            <Typography variant="body2" ml={1}>4.5</Typography>
+                            <Rating name="read-only" value={tour.rating} precision={.5} readOnly size="small"/>
+                            <Typography variant="body2" ml={1}>{tour.rating}</Typography>
                             <Typography variant="body2" ml={1}>({tour.numberOfReviews} reviews)</Typography>
                         </Box>
                         <Box>
